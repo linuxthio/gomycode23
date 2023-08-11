@@ -1,7 +1,14 @@
 from math import sqrt
 import sys
 
-D=sys.argv[1].split(',')
+argv=sys.argv
+
+if len(argv)>1:
+    D=sys.argv[1].split(',')
+else:
+    print("Entrer une serie de nombre separee par des virgule : \n")
+    D=input().split(',')
+
 
 def Q(d):
     res=[]
